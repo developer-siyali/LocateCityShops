@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/places_navigation"
+    app:startDestination="@id/citiesListFragment">
+
+    <fragment
+        android:id="@+id/citiesListFragment"
+        android:name="com.example.locatecityshops.CitiesListDisplayFragment"
+        android:label="fragment_cities_list" >
+        <action
+            android:id="@+id/citiesListFragmentToViewShopFragment"
+            app:destination="@id/viewShopFragment" />
+        <action
+            android:id="@+id/citiesListFragmentToMallListFragment"
+            app:destination="@id/mallListFragment" />
+        <action
+            android:id="@+id/citiesListFragmentToNoDataAlertFragment"
+            app:destination="@id/noDataAlertFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mallListFragment"
+        android:name="com.example.locatecityshops.MallListDisplayFragment"
+        android:label="fragment_mall_list" >
+        <action
+            android:id="@+id/mallListFragmentToViewShopFragment"
+            app:destination="@id/viewShopFragment" />
+        <action
+            android:id="@+id/action_mallListFragment_to_noDataAlertFragment"
+            app:destination="@id/noDataAlertFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewShopFragment"
+        android:name="com.example.locatecityshops.ShopListDisplayFragment"
+        android:label="fragment_view_shop" />
+    <fragment
+        android:id="@+id/noDataAlertFragment"
+        android:name="com.example.locatecityshops.NoDataAlertFragment"
+        android:label="fragment_no_data_alert"
+        tools:layout="@layout/fragment_no_data_alert" >
+        <action
+            android:id="@+id/action_noDataAlertFragment_to_citiesListFragment"
+            app:destination="@id/citiesListFragment" />
+    </fragment>
+</navigation>

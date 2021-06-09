@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Locate City Shops</string>
+    <string name="number_results_found">%1$s</string>
+    <string name="search_instruction">Search %1$s below</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mall">mall(s)</string>
+    <string name="shop">shop(s)</string>
+    <string name="cities">Cities</string>
+    <string name="malls">Malls</string>
+    <string name="shops">Shops</string>
+    <string name="view_all_shops_in_city">View all shop in %1$s</string>
+    <string name="no_data_to_display">Due to no connection and no previous saved data, the app cannot display any information. Fix your connection and try again.</string>
+    <string name="internet_connection_error">"The was internet connection found, previously save information is displayed</string>
+
+</resources>
